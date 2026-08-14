@@ -8,17 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		B26872762FFA992E00B57BFB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B26872752FFA992400B57BFB /* README.md */; };
+		B2E636FE30277C100076DB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E636F730277C100076DB03 /* Assets.xcassets */; };
+		B2E636FF30277C100076DB03 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B2E636FC30277C100076DB03 /* README.md */; };
+		B2E6370330277C100076DB03 /* HideAndCheekyCarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E636FB30277C100076DB03 /* HideAndCheekyCarApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B26872672FFA98DC00B57BFB /* HideAndCheekyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HideAndCheekyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26872752FFA992400B57BFB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = README.md; sourceTree = "<group>"; };
+		B2E636F730277C100076DB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2E636FB30277C100076DB03 /* HideAndCheekyCarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideAndCheekyCarApp.swift; sourceTree = "<group>"; };
+		B2E636FC30277C100076DB03 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B26872692FFA98DC00B57BFB /* HideAndCheekyCar */ = {
+		B2E6370430277C3B0076DB03 /* Models */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HideAndCheekyCar;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2E6370530277C520076DB03 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2E6370630277C6D0076DB03 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B2E6370730277CEB0076DB03 /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B2E6370830277CF50076DB03 /* Utils */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -38,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				B26872752FFA992400B57BFB /* README.md */,
-				B26872692FFA98DC00B57BFB /* HideAndCheekyCar */,
+				B2E636FD30277C100076DB03 /* HideAndCheekyCar */,
 				B26872682FFA98DC00B57BFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +75,21 @@
 				B26872672FFA98DC00B57BFB /* HideAndCheekyCar.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B2E636FD30277C100076DB03 /* HideAndCheekyCar */ = {
+			isa = PBXGroup;
+			children = (
+				B2E6370830277CF50076DB03 /* Utils */,
+				B2E6370730277CEB0076DB03 /* Services */,
+				B2E6370630277C6D0076DB03 /* ViewModels */,
+				B2E6370530277C520076DB03 /* Views */,
+				B2E6370430277C3B0076DB03 /* Models */,
+				B2E636F730277C100076DB03 /* Assets.xcassets */,
+				B2E636FB30277C100076DB03 /* HideAndCheekyCarApp.swift */,
+				B2E636FC30277C100076DB03 /* README.md */,
+			);
+			path = HideAndCheekyCar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,7 +108,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B26872692FFA98DC00B57BFB /* HideAndCheekyCar */,
+				B2E6370430277C3B0076DB03 /* Models */,
+				B2E6370530277C520076DB03 /* Views */,
+				B2E6370630277C6D0076DB03 /* ViewModels */,
+				B2E6370730277CEB0076DB03 /* Services */,
+				B2E6370830277CF50076DB03 /* Utils */,
 			);
 			name = HideAndCheekyCar;
 			packageProductDependencies = (
@@ -115,6 +160,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E636FE30277C100076DB03 /* Assets.xcassets in Resources */,
+				B2E636FF30277C100076DB03 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E6370330277C100076DB03 /* HideAndCheekyCarApp.swift in Sources */,
 				B26872762FFA992E00B57BFB /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +309,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Hide 'n Cheeky Car needs your location to remember where you parked";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -270,7 +319,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -305,6 +354,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Hide 'n Cheeky Car needs your location to remember where you parked";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -314,7 +364,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
