@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-struct CarLocation: Codable {
+struct CarLocation: Codable { // Codable: Can save/load to device storage
     let id: UUID
     let latitude: Double
     let longitude: Double
